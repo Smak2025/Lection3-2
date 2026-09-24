@@ -1,6 +1,6 @@
-import ru.gr0550x.ui.BadNotesWindow;
+import ru.gr0550x.ui.NotesWindow;
 
 void main() {
-    var wnd = new BadNotesWindow();
+    var wnd = new NotesWindow();
     wnd.setVisible(true);
 }
