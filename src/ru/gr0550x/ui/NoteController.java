@@ -2,13 +2,13 @@ package ru.gr0550x.ui;
 
 public class NoteController {
     private final NoteService service;
-    private final NoteView view;
+    private NoteView view;
 
-    public NoteController(
-            NoteService service,
-            NoteView view
-    ){
+    public NoteController(NoteService service){
         this.service = service;
+    }
+
+    public void attachView(NoteView view){
         this.view = view;
     }
 

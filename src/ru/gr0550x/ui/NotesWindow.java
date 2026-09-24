@@ -47,12 +47,12 @@ public class NotesWindow extends JFrame implements NoteView{
         var i = 1;
         for (Note note: notes) {
             notesArea.append(i++ + ". " + note.createdAt() + ": " + note.text());
-
+            notesArea.append(System.lineSeparator());
         }
     }
 
     @Override
     public void showError(String message) {
-
+        JOptionPane.showMessageDialog(this, message);
     }
 }
